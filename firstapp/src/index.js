@@ -17,9 +17,21 @@ const img3 = "https://picsum.photos/200/300"
 const links = "https://google.com"
 
 
+const heading = {
+    color: '#fa9191',
+    textAlign: 'center',
+    textTransform: 'capitalize',
+    fontWeight: 'bold',
+    textShadow: '0px 2px 4px #ffe9c5',
+    margin: '70px 0',
+    fontFamily: '"Josefin Sans", sans-serif'
+}
+
+
 ReactDOM.render(
    <React.Fragment> 
-       <h1 className="heading">My Name is {fname} {lname}</h1>
+       {/* <h1 class="heading">My Name is {fname} {lname}</h1> */}
+       <h1 style={heading}>My Name is {fname} {lname}</h1>
        <h1>My Name is {fname+ " "+lname}</h1>
        <h1>My Name is {` ${fname} ${lname}`}</h1>
        <h1>Current Date is  {currentDate}</h1>
