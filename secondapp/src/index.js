@@ -24,7 +24,8 @@ if(curDate>= 1 && curDate < 12){
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1 >Heelo , <span style={cssStyle}>{greeting}</span></h1>    
+    <h1 >Heelo , <span style={cssStyle}>{greeting}</span></h1>   
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
