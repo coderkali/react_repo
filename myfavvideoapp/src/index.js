@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Card from "./Cards"
-import Sdata from './Sdata'
+import App from './App'
+
 
 // function cards(values,index,arr){
 //    return(
@@ -18,9 +18,7 @@ import Sdata from './Sdata'
 
 ReactDOM.render(
   <React.StrictMode>
-      <h1 className>
-        List Of Top 5 Netflix 
-      </h1>
+     
       {/* <Card imgsrc="https://wallpapercave.com/wp/wp4056410.jpg" 
          title="A Netflix Original Series" 
          sname="Dark"
@@ -76,15 +74,21 @@ ReactDOM.render(
 
 
 
-    {Sdata.map((values) => {
+    {/* {Sdata.map((values) => {
       return (
-        <Card imgsrc={values.imgsrc}
+        <Card 
+          key = {values.id}
+          imgsrc={values.imgsrc}
           title={values.title}
           sname={values.sname}
           link={values.link} 
          />
       );
-    })}
+    })} */}
+
+
+    <App/>
+
     
   </React.StrictMode>,
   document.getElementById('root')

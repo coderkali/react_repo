@@ -1,13 +1,11 @@
-
+import Images from "./Images";
 
 function Card(props){
     return (
       <>
         <div className="cards">
         <div className="card">
-            <img src={props.imgsrc} 
-            alt="mypic" 
-            className="card__img"/>
+            <Images imgsrc={props.imgsrc}/>
             <div className="card__info">
                <span className="card__category">{props.title} </span>
                <h3 className="card__title">{props.sname}</h3>
