@@ -1,6 +1,32 @@
 import React from "react";
-import Card from "./Cards"
-import Sdata from './Sdata'
+// import Card from "./Cards"
+// import Sdata from './Sdata'
+import Netflix from './netflix';
+import Amazon from './Amazon';
+
+const favourites = 'Netflix'
+
+const Favs = () => {
+    if(favourites === 'Netflix'){
+        // return (
+        //     <Card 
+        //     key = {Sdata[1].id}
+        //     imgsrc={Sdata[1].imgsrc}
+        //     title={Sdata[1].title}
+        //     sname={Sdata[1].sname}
+        //     link={Sdata[1].link} 
+        //    />
+        // );
+        return <Netflix/>;
+
+    }else{
+        return (
+            <Amazon/>
+        );
+
+    }
+}
+
 
 
 
@@ -10,7 +36,7 @@ const App = () => ((
         List Of Top 5 Netflix 
       </h1>
 
-      {Sdata.map((values) => {
+      {/* {Sdata.map((values) => {
       return (
         <Card 
           key = {values.id}
@@ -20,7 +46,13 @@ const App = () => ((
           link={values.link} 
          />
       );
-    })}
+    })} */}
+
+
+     {/* This is for If Else Condition */}
+    {/* <Favs/> */}
+
+    { (favourites === 'Netflix') ?  <Netflix/> :  <Amazon/> }
 
 
 
