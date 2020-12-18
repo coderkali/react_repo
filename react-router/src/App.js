@@ -5,6 +5,7 @@ import Error from "./Error";
 import Menu from "./NavBar";
 import Service from "./Services";
 import User from "./User";
+import Search from "./Search";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
            <Route path="/service" render={ () => <Service name="Services"/> }/>
            <Route path="/contact" component={Contact} />
            <Route path="/user/:name/:lname" component={User} />
+           <Route path="/search" component={Search} />
            <Route component={Error}/>
         </Switch>
     </>

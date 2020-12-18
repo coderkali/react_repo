@@ -17,6 +17,10 @@ const Menu = () => {
          <NavLink activeClassName="active_class" 
          to="/user/default/lname"> User</NavLink>
          <br/>
+
+         <NavLink activeClassName="active_class" 
+         to="/search"> Search</NavLink>
+         <br/>
         
         </div>
       </>
